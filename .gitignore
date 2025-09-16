@@ -1,0 +1,33 @@
+# PL-WebEval .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+.env
+
+# Node/Playwright MCP
+node_modules/
+/playwright-mcp-main/
+
+# Outputs and artifacts
+maintestrun/
+out/
+results/
+**/overall_report.html
+**/overall_results.json
+**/overall_results.csv
+**/comprehensive_analysis.json
+**/baseline_screenshot.png
+**/adapted_screenshot_*.png
+**/baseline_snapshot.html
+**/adapted_snapshot_*.html
+webeval.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,37 @@
+# Include top-level docs and license
+include README.md
+include LICENSE
+include requirements.txt
+
+# Include the vendored custom Playwright MCP server (non-official) in sdists
+# Note: Wheels use [tool.setuptools.package-data] in pyproject.toml
+recursive-include src/pl_webeval/playwright-mcp-main *
+
+# Exclude heavy or VCS/cache directories from the vendored server
+recursive-exclude src/pl_webeval/playwright-mcp-main/node_modules *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.git *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.github *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.turbo *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.next *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.cache *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.vscode *
+recursive-exclude src/pl_webeval/playwright-mcp-main/.idea *
+recursive-exclude src/pl_webeval/playwright-mcp-main/test *
+recursive-exclude src/pl_webeval/playwright-mcp-main/tests *
+recursive-exclude src/pl_webeval/playwright-mcp-main/spec *
+recursive-exclude src/pl_webeval/playwright-mcp-main/specs *
+recursive-exclude src/pl_webeval/playwright-mcp-main/examples *
+recursive-exclude src/pl_webeval/playwright-mcp-main/example *
+recursive-exclude src/pl_webeval/playwright-mcp-main/coverage *
+recursive-exclude src/pl_webeval/playwright-mcp-main/test-results *
+recursive-exclude src/pl_webeval/playwright-mcp-main/playwright-report *
+recursive-exclude src/pl_webeval/playwright-mcp-main/*.log
+recursive-exclude src/pl_webeval/playwright-mcp-main/*.lock
+recursive-exclude src/pl_webeval/playwright-mcp-main/*.tmp
+recursive-exclude src/pl_webeval/playwright-mcp-main/*.swp
+recursive-exclude src/pl_webeval/playwright-mcp-main/.DS_Store *
+
+# Ship helper script(s)
+include scripts/vendor_playwright_mcp.ps1
+include scripts/setup_mcp.ps1
+include scripts/setup_mcp.sh
