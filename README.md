@@ -6,7 +6,7 @@ This tool is part of the **PersonaLayer** research project, which introduces a n
 
 ### Paper Abstract
 
-> **PersonaLayer: Profile-Informed Web Personalization for Enhanced User Experience and Accessibility**
+
 >
 > Static and non-adaptive web interfaces continue to create barriers for people with diverse visual, cognitive, motor, and situational needs. This paper introduces PersonaLayer, a method for profile-informed web personalization based on 45 user experience (UX) profiles developed through AI-assisted exploration, alignment with WCAG 2.2, and expert validation. It enables users to set preferences via a dedicated homepage, toggle adaptations manually, or perform dynamic AI-driven personalization by free-text or voice commands. To test and demonstrate its capability, we provide an AI-driven benchmarking tool that can evaluate before-and-after comparisons and generate automated insights. Initial results show that PersonaLayer can systematically adapt web interfaces across diverse accessibility needs, and the benchmarking tool provides a reproducible way to assess such adaptations without requiring extensive user testing. This work highlights the potential of profile-informed, AI-assisted personalization to reduce accessibility barriers and support more inclusive web experiences.
 
