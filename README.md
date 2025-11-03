@@ -168,19 +168,6 @@ This tool supports research in:
 - Cross-browser/cross-site adaptation patterns
 - AI-driven accessibility improvements
 
-## Citation
-
-If you use this tool in your research, please cite:
-
-```bibtex
-@article{personalayer2025,
-  title={PersonaLayer: Profile-Informed Web Personalization for Enhanced User Experience and Accessibility},
-  author={[Authors]},
-  journal={[Journal]},
-  year={2025}
-}
-```
-
 ## License
 
 This tool is part of academic research. Please contact the authors for licensing information.
